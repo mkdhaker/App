@@ -317,6 +317,10 @@ resetPasswordForm.addEventListener('submit', async function(e) {
         alert(`Error: ${error.message}`);
     }
 });
+
+        window.onload = function() {
+    window.history.pushState({}, '', '/random-generated-url-' + Math.random().toString(36).substring(7));
+};
     </script>
 </body>
 </html>
